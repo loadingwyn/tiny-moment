@@ -1,4 +1,4 @@
-# React Image Slides
+# tiny-moment
 
 > a tiny js date/time handler 
 
