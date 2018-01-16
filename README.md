@@ -16,7 +16,7 @@
 1. format
 
 ```js
-import tinyMoment from 'tiny-moment;
+import tinyMoment from 'tiny-moment';
 
 tinyMoment.format('1995/2/7', 'yyyy.MM.dd'); // '1995.02.07'
 tinyMoment.format('1995/2/7', 'yy:M:dd, HH'); // '95:2:07, 00'
@@ -26,7 +26,7 @@ tinyMoment.format('1995/2/7', 'yy:M:dd, HH'); // '95:2:07, 00'
 
 
 ```js
-import tinyMoment from 'tiny-moment;
+import tinyMoment from 'tiny-moment';
 
 tinyMoment.parse('2016-08-18', 'yyyy-MM-dd', 'MM-yyyy-dd, hh'); // '09-2016-18, 00'
 tinyMoment.parse('2016-08-18', 'yyyy-MM-dd'); // a Date instance that represents '2016-08-18'
