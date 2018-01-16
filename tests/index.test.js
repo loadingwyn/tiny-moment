@@ -2,8 +2,8 @@ import tinyMoment from '../dist/bundle.esm.js';
 
 describe('tinyMoment', () => {
   describe('tinyMoment.format', () => {
-    it('throw Invalid format', () => {
-      expect(() => tinyMoment.format('sdf')).toThrowError('Invalid date');
+    it('return Invalid format', () => {
+      expect(tinyMoment.format('sdf')).toBe('Invalid date');
     });
 
     it('handle Date Object', () => {
@@ -11,8 +11,8 @@ describe('tinyMoment', () => {
         tinyMoment.format(new Date('1995-12-17T03:24:00'), 'yyyy.MM.dd'),
       ).toBe('1995.12.17');
     });
-    it('throw Invalid format', function() {
-      expect(() => tinyMoment.format('1995-12-17T03:24:00', 1234)).toThrowError(
+    it('return Invalid format', function() {
+      expect(tinyMoment.format('1995-12-17T03:24:00', 1234)).toBe(
         'Invalid format',
       );
     });
@@ -36,16 +36,16 @@ describe('tinyMoment', () => {
     });
   });
   describe('tinyMoment.parse', () => {
-    it('throw not match', () => {
-      expect(() =>
+    it('return not match', () => {
+      expect(
         tinyMoment.parse('2016-08-18', 'MM-dd', 'MM-yyyy-dd, hh'),
-      ).toThrowError('Not match');
+      ).toBe('Not match');
     });
 
     it('return unvalid', () => {
-      expect(() =>
+      expect(
         tinyMoment.parse('08-18', 'MM-dd', 'MM-yyyy-dd, hh'),
-      ).toThrowError('Invalid Date');
+      ).toBe('Invalid Date');
     });
 
     it('convert yyyy-MM-dd to MM-yyyy-dd', () => {

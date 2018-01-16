@@ -22,10 +22,12 @@ export default function format(date, format = 'yyyy-MM-dd') {
   }
 
   if (!(validDate instanceof Date) || validDate.toString() === 'Invalid Date') {
-    throw new Error('Invalid date');
+    return 'Invalid date';
+    //throw new Error('Invalid date');
   }
   if (typeof format !== 'string') {
-    throw new Error('Invalid format');
+    return 'Invalid format';
+    // throw new Error('Invalid format');
   }
   const handlers = [
     [/yyyy/i, validDate.getFullYear.bind(validDate)],

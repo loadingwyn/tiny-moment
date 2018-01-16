@@ -12,7 +12,8 @@ import { replace } from './utils';
 
 export default function parse(date, format, exportFormat) {
   if (date.length !== format.length) {
-    throw new Error('Not match');
+    return 'Not match';
+    // throw new Error('Not match');
   }
   const temps = [
     ['yyyy', '(\\d{4})', false],
@@ -35,7 +36,8 @@ export default function parse(date, format, exportFormat) {
   });
   const result = new Date(...actualDate);
   if (!result || result.toString() === 'Invalid Date' || actualDate[0] === 0) {
-    throw new Error('Invalid Date');
+    return 'Invalid Date';
+    // throw new Error('Invalid Date');
   }
   return exportFormat ? dateFormat(result, exportFormat) : result;
 }
