@@ -1,17 +1,23 @@
 {
   "name": "tiny-moment",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "tiny moment.js",
   "main": "dist/bundle.js",
   "module": "dist/bundle.esm.js",
   "scripts": {
     "clean": "rimraf dist",
-    "build":
-      "npm run clean && rollup --config rollup.config.esm.js && rollup --config rollup.config.umd.js",
+    "build": "npm run clean && rollup --config rollup.config.esm.js && rollup --config rollup.config.umd.js",
     "test": "jest"
   },
-  "keywords": ["dates", "times", "moment"],
-  "files": ["dist", "src"],
+  "keywords": [
+    "dates",
+    "times",
+    "moment"
+  ],
+  "files": [
+    "dist",
+    "src"
+  ],
   "author": "loadingwyn",
   "license": "MIT",
   "devDependencies": {
