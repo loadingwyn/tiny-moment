@@ -1,6 +1,6 @@
 import format from './format';
 import parse from './parse';
 
-const tinyTime = { format, parse };
+const tinyMoment = { format, parse };
 
-export default tinyTime;
+export default tinyMoment;
