@@ -32,28 +32,28 @@ tinyMoment.parse('2016-08-18', 'yyyy-MM-dd', 'MM-yyyy-dd, hh'); // '09-2016-18, 
 tinyMoment.parse('2016-08-18', 'yyyy-MM-dd'); // a Date instance that represents '2016-08-18'
 ```
 
-##Apis
+## Apis
 
-1. format
+### format
 
-### Arguments
+#### Arguments
 
 - string | object:  The value to format. It must be a valid date string that `Date.parse` can recognize or an Date instance.
 - string: Target format
 
-### Return
+#### Return
 
 - string: String in the target format
 
-2. parse
+### parse
 
-### Arguments
+#### Arguments
 
 - string: The value to parse.
 - string: The format of the fisrt param
 - string(Optional): Target format
 
-### Return
+#### Return
 
 - string | object: A date instance or a string in the target format
 
