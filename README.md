@@ -1,6 +1,6 @@
 # tiny-moment
 
-> a tiny js date/time handler 
+> a tiny js date/time handler
 
 
 ## Features
@@ -50,7 +50,7 @@ tinyMoment.parse('2016-08-18', 'yyyy-MM-dd'); // a Date instance that represents
 #### Arguments
 
 - string: The value to parse.
-- string: The format of the fisrt param
+- string: The format of the first param
 - string(Optional): Target format
 
 #### Return
